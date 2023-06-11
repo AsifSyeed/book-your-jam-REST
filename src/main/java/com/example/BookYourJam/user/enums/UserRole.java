@@ -3,7 +3,7 @@ package com.example.BookYourJam.user.enums;
 
 public enum UserRole {
     CUSTOMER(1),
-    ORGANIZER(2);
+    OWNER(2);
 
     private final int value;
 

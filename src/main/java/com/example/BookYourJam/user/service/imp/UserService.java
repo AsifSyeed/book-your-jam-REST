@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -31,6 +32,11 @@ public class UserService implements IUserService {
         UserAccount userAccount = prepareUserModel(signUpRequest);
 
         userRepository.save(userAccount);
+    }
+
+    @Override
+    public Optional<UserAccount> findByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
 
     private void validateRequest(SignUpRequest signUpRequest) {
