@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgres://dpg-ci322kqk728i8tcim5l0-a.singapore-postgres.render.com:5432/database_book_your_jam
+    url: jdbc:postgresql://dpg-ci322kqk728i8tcim5l0-a.singapore-postgres.render.com:5432/database_book_your_jam
     username: database_book_your_jam_user
     password: NcFnBgbEoHJUl7YZoENDSaBHZP86Iu9f
 
