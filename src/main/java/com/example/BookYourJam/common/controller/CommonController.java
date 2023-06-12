@@ -13,7 +13,7 @@ public class CommonController {
     public ResponseEntity<String> getBaseResponse() {
         String title = "Book Your Jam!";
         String subtitle = "Service is running";
-        String response = String.format("{\"responseCode\": 401, \"message\": \"%s - %s\"}", title, subtitle);
+        String response = String.format("%s\n%s", title, subtitle);
         return ResponseEntity.status(HttpStatus.OK.value()).body(response);
     }
 }

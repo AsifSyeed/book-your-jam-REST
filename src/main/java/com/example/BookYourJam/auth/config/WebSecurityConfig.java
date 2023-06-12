@@ -35,7 +35,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private final List<String> publicUrls = List.of(
             "/api/v1/event/all",
             "/api/v1/user/signup",
-            "/api/v1/auth/token"
+            "/api/v1/auth/token",
+            "/"
     );
 
     @Autowired
